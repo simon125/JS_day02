@@ -6,7 +6,7 @@
 
 body{
 
-    background-color: #7d7d7d;
+    background-color: #fff1fd;
 }
 nav{
     margin-left: 0;
@@ -49,13 +49,19 @@ nav{
     width: 80%;
     height: 500px;
     margin: 20px auto;
-    padding: 5%;
+    padding: 2%;
 
 
 }
-
-#score{
+.score-view{
 
     font-size: 50px;
 
 }
+ .exe{
+     text-align: center;
+     font-size: 15px;
+     margin-bottom: 3%;
+
+
+ }
