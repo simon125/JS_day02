@@ -126,8 +126,62 @@ for(;;){
 
 
 
-document.getElementById("boiledMilk").innerHTML = "Mleko ugotowane i ma " + milkTemp + " stopni celsujuesza była to " + counter + "iteracja"
+document.getElementById("boiledMilk").innerHTML = "Mleko ugotowane i ma " + milkTemp + " stopni celsujuesza była to " + counter + " iteracja"
+
+
+////////////////////////////// task arrays01
+
+var array = new Array(3)
+
+document.getElementById("sizeArray1").innerHTML = 'długość tablicy po "var array = new Array(3)":   ' + array.length
+
+array.length = 2
+
+document.getElementById("sizeArray2").innerHTML = 'długość tablicy po "array.length = 2":   ' + array.length
+
+//////////////////////////////task arrays02
+
+var table = []
+
+for(var i = 0; i < 100; i++){
+
+    table[i] = Math.round(Math.random()*100)
+
+}
+
+console.table(table)
+
+/////////////////////array function
+
+var array = [1,2,3,4,5]
+
+var lastElementOfArray = array.pop()
+
+document.getElementById("popA").innerHTML = "last element of array [1,2,3,4,5] by using pop( ): " + lastElementOfArray
 
 
 
 
+
+/////////////////////task 8
+
+
+var arr = [1,2,3,4,5]
+
+console.table(arr)
+
+arr.push(6)    //dodanie 6 na ostatnie miejsce
+
+console.table(arr)
+
+arr.unshift(0) //dodanie 0 na pierwsze miejsce
+
+console.table(arr)
+
+arr.pop(arr)
+
+console.table(arr)
+
+arr.shift(arr)
+
+console.table(arr)
