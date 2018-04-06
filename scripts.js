@@ -185,3 +185,64 @@ console.table(arr)
 arr.shift(arr)
 
 console.table(arr)
+
+
+/////////////////// arrays slice()
+
+
+var a = ['lorem1', 'lorem2', 'lorem3', 'lorem4', 'lorem5']
+
+console.table(a)
+
+var slicedA = a.slice(1,3)
+
+console.table(slicedA)
+
+//////////////////////
+
+var a1 = [0,1,2,3,4,5,6,7,8,9]
+
+var slicedA = a1.slice(3,7)
+
+console.table(a1)
+console.table(slicedA)
+
+
+//////////////////random size and random slicing
+while(sizeOfArray%2 != 0) {
+
+    var sizeOfArray = Math.round(Math.random() * 100 + 1) // numbers from 1 to 100
+
+}
+
+var startSlicePoint = (sizeOfArray/2) - 2
+var endSlicePoint = (sizeOfArray/2) + 2
+
+
+var randomArray = []
+
+for(var i = 0; i < sizeOfArray; i++)
+{
+    randomArray[i] = i
+
+
+}
+
+
+var arr2 = randomArray.slice(startSlicePoint,endSlicePoint)
+
+console.log("rozmiar tablicy: " + sizeOfArray )
+console.log("slice start point: " + startSlicePoint)
+console.log("slice end point: " + endSlicePoint)
+console.log("tablica normalna")
+
+console.table(randomArray)
+
+
+console.table(arr2)
+
+
+
+
+
+
